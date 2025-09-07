@@ -4,6 +4,14 @@ Projeto acadêmico desenvolvido para a disciplina de **Segurança da Informaçã
 Curso: Análise e Desenvolvimento de Sistemas  
 
 ---
+## 🔗 Links Importantes
+
+| Recurso             | Link                                                                                                             |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **📄 Relatório Completo** | **[Aceder ao Documento](https://docs.google.com/document/d/1VJJn4QAESOSPqmT-OwuZz2Uon3BtOE9RJt859uOtMFU/edit?usp=sharing)** |
+| **💻 Site ao Vivo** | **[Ver o Projeto no GitHub Pages](https://jo4ovictor.github.io/SI/)** |
+
+---
 
 ## 📌 Estrutura do Projeto
 ```/
