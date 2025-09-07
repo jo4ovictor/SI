@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato — InfoTech Solutions</title>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="/index.html">InfoTech Solutions</a>
+            <nav class="nav">
+                <a href="/index.html">Início</a>
+                <a href="/services.html">Serviços</a>
+                <a href="/contact.html" class="active">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <h1>Fale Conosco</h1>
+
+
+        <p class="small">Este formulário demonstra <strong>confidencialidade</strong>: antes do envio, a mensagem é
+            <em>criptografada no navegador</em> (simulação didática). Em produção, use <strong>HTTPS</strong> e
+            criptografia com chaves gerenciadas no servidor.</p>
+
+
+        <form id="contactForm" class="card" autocomplete="off" novalidate>
+            <div class="field">
+                <label for="name">Nome</label>
+                <input id="name" name="name" type="text" minlength="3" maxlength="80" required />
+            </div>
+            <div class="field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" minlength="10" maxlength="1000" required></textarea>
+            </div>
+
+
+            <!-- Honeypot anti-spam (não preencher) -->
+            <div class="honeypot" aria-hidden="true">
+                <label for="company">Empresa (não preencha)</label>
+                <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+
+            <!-- Token simples anti-CSRF (simulação) -->
+            <input type="hidden" id="csrf" name="csrf" />
+
+
+            <button class="btn" type="submit">Enviar</button>
+
+
+            <p id="status" class="status" role="status" aria-live="polite"></p>
+        </form>
+
+
+        <section class="grid-3">
+            <article class="card">
+                <h2>Outros canais</h2>
+                <p>E-mail: atendimento@infotech.com</p>
+                <p>Telefone: (69) 0000-0000</p>
+                <p>Endereço: Av. Calama, 123 — Porto Velho/RO</p>
+            </article>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container small">
+            <p>© <span id="year"></span> InfoTech Solutions. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="/js/main.js" defer></script>
+</body>
+
+</html>

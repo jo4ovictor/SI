@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoTech Solutions — Segurança e Software</title>
+    <!-- CSP por meta (ideal é via cabeçalho do servidor): restringe a origem de recursos -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="no-referrer" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <meta name="description"
+        content="InfoTech Solutions — Desenvolvimento de software e consultoria em segurança da informação para PMEs." />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="/index.html">InfoTech Solutions</a>
+            <nav class="nav">
+                <a href="/index.html" class="active">Início</a>
+                <a href="/services.html">Serviços</a>
+                <a href="/contact.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <section class="hero">
+            <h1>Segurança, Confiabilidade e Inovação</h1>
+            <p>Desenvolvemos software e fortalecemos a segurança digital de pequenas e médias empresas.</p>
+            <a class="btn" href="/services.html">Conheça nossos serviços</a>
+        </section>
+
+
+        <section class="grid-3">
+            <article class="card">
+                <h2>Integridade</h2>
+                <p>Conteúdo mantido apenas por administradores autorizados. Versões controladas e proteção contra
+                    alterações indevidas.</p>
+            </article>
+            <article class="card">
+                <h2>Confidencialidade</h2>
+                <p>Dados sensíveis trafegam sob HTTPS. No formulário, há simulação de criptografia no cliente antes do
+                    envio.</p>
+            </article>
+            <article class="card">
+                <h2>Disponibilidade</h2>
+                <p>Site pronto para modo offline (PWA): assets estáticos são cacheados com Service Worker.</p>
+            </article>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container small">
+            <p>&copy <span id="year"></span> InfoTech Solutions. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="/js/main.js" defer></script>
+</body>
+
+</html>
