@@ -5,7 +5,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 // Registra Service Worker (Disponibilidade)
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/js/sw.js').catch(err => console.warn('ServiceWorker failed:', err));
+    navigator.serviceWorker.register('js/sw.js').catch(err => console.warn('ServiceWorker failed:', err));
   });
 }
 

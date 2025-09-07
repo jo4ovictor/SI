@@ -1,11 +1,10 @@
 const CACHE_NAME = 'infotech-cache-v1';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/services.html',
-  '/contact.html',
-  '/css/styles.css',
-  '/js/main.js'
+  'index.html',
+  'services.html',
+  'contact.html',
+  'css/styles.css',
+  'js/main.js'
 ];
 
 self.addEventListener('install', (event) => {
@@ -23,7 +22,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((cached) => {
-      return cached || fetch(event.request).catch(() => caches.match('/index.html'));
+      return cached || fetch(event.request).catch(() => caches.match('index.html'));
     })
   );
 });
